@@ -26,11 +26,10 @@ class Popup extends Component {
                 buttonText: 'Restart'
             });
 
-            //alert("START THE QUIZ");
             this.props.startQuiz();
         } else {
             
-            //alert("FINISHED QUIZ");            
+            
             location.reload();// restart the application
         }
     }

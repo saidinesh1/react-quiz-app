@@ -35,10 +35,7 @@ class Answers extends Component {
             })
 
             this.props.showButton();       
-            var myTime = setTimeout(() => {
-                this.clearClasses();
-                //console.log("IN SET Timeout")
-            }, 5000);
+            
         }
     }
     clearClasses(){
@@ -51,11 +48,6 @@ class Answers extends Component {
         let { answers } = this.props;
         let { classNames } = this.state;
         
-        let transition = {
-            transitionName: "example",
-            transitionEnterTimeout: 500,
-            transitionLeaveTimeout: 300
-        }
         
         return (
             <div id="answers">
